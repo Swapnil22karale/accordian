@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'task-2a';
+  info: any;
+  info2: any;
+  checked : boolean = true;
+
+  listenFromChild(eve: any){
+    this.info = eve[0];
+    this.info2 = eve[1];
+  }
 }
